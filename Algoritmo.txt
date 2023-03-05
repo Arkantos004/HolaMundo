@@ -1,0 +1,41 @@
+package matriz;
+
+import javax.swing.*;
+
+
+public class Matriz {
+
+   
+    public static void main(String[] args) {
+        int matriz[][], filas, columnas, i, j=0,igual=0;
+
+        filas = Integer.parseInt(JOptionPane.showInputDialog("INGRSEE EL NUMERO DE FILAS:"));
+        columnas = Integer.parseInt(JOptionPane.showInputDialog("INGRSEE EL NUMERO DE COLUMNAS:"));
+        //DEFINIENDO MATRIZ 
+
+        matriz = new int[filas][columnas];
+
+        //LLENANDO LA MATRIZ 
+        for (i = 0; i < filas; i++) {
+            for (j = 0; j < columnas; j++) {
+                matriz[i][j] = Integer.parseInt(JOptionPane.showInputDialog("INGRESE UN NUMERO EN LA MATRIZ 1 EN SU POSICION [" + i + "][" + j + "] "));
+                
+                                      
+                      
+                
+                }
+            }
+
+            //MOSTRANDO LA MATRIZ 
+            System.out.println("--- AQUI LA MATRIZ  ---");
+            for (i = 0; i < filas; i++) {
+                for (j = 0; j < columnas; j++) {
+
+                    System.out.print(matriz[i][j] + " ");
+                }
+                System.out.println("");
+            }
+        System.out.println("LA MATRIZ ES MAYORITARIA: "+matriz[i][j]);
+        }
+    }
+
